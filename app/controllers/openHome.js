@@ -6,8 +6,6 @@ class openHomeController{
     {
         console.log("inside openHome Controller");
         res.render('index');
-
-
     }
 }
 
