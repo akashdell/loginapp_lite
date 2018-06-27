@@ -1,6 +1,6 @@
  let mongoose= require('mongoose');
  var bcrypt = require('bcryptjs');
- console.log("schema file");
+ console.log(" user schema file");
  let userSchema= mongoose.Schema({
   
     username: {

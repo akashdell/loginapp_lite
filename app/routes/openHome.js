@@ -1,6 +1,6 @@
 const express = require("express");
 const openHomeController = require("../controllers/openHome.js");
-const openHome = (passport) => {
+const openHome = () => {
     console.log("inside openHome.js Routes")
     const openRouter = express.Router();
     openRouter.get('/',ensureAuthenticated, openHomeController.getHome);
