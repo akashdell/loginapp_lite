@@ -1,18 +1,14 @@
 let mongoose= require('mongoose');
 console.log("chat schema file");
-let chatSchema= mongoose.schema({
-    // connections: { type: [{ roomId: String, socketId: String }]},
-    // message:{
-    //     type:string,
-    //     required:true
-    // }
+let chatSchema= mongoose.Schema({
+    
     name:{
-        type:string,
+        type:String,
         required:true
     },
     message:{
-        type:string,
+        type:String,
         required:true
     }
-})
+});
 module.exports = mongoose.model('chats',chatSchema);

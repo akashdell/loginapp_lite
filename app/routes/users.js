@@ -3,7 +3,7 @@ const validationMiddleWare = require("../validations/validation");
 const UserController = require("../controllers/users");
 const initUsers=(passport)=>{
   const userRouter=express.Router();
-  console.log("passport*********************1"+passport);
+  //console.log("passport*********************1"+passport);
   userRouter.get('/register',UserController.showRegisterDetails);
   userRouter.get('/login',UserController.showLoginDetails);
   userRouter.get('/logout',UserController.logOutUser);

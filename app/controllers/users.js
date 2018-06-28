@@ -1,6 +1,5 @@
-const io = require('../../lib/app').io;
+//const client = require('../../lib/app');
 var User = require('../models/user');
-const register='../views/register'
 
 class UserController{
 
@@ -52,11 +51,11 @@ class UserController{
 
   static insertLoginDetails(req,res){
     console.log("insert Login Details controller*************");
-    console.log("&&&&&&&&&&&&&&&&&&&&&&&&",io);
-    res.sendfile('index');
-
-   
+    //console.log("&&&&&&&&&&&&&&&&&&&&&&&&",client);
     
+    res.render('index',{user:req.user});
+
+
   }
 }
 //Class ends here 
